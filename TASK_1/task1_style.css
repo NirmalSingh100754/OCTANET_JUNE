@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Playfair display;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+#main
+{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.top
+{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(im11.webp);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay
+{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.196);
+}
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 3vh;
+    color: white;
+    bottom: 5%;
+}
+.header
+{
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding-left: 80%;
+    padding-top: 3%;
+}
+.text h1{
+    font-weight:500 ;
+    font-size: 4vw;
+}
+.text .images
+{
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 500px;
+}
+.rtext
+{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rtext p{
+    font-size: 15px;
+}
+.bottom
+{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1{
+    width: 40%;
+    height: 40vh;
+    min-height: inherit;
+    background-image: url(nat2.avif);
+    background-size: cover;
+    background-position: center;
+    color: antiquewhite;
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+}
+.b1 p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.b2
+{
+    width: 40%;
+    height: 40vh;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(c2.avif);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.b2 p{
+    text-align: center;
+}
+.b2 .down
+{
+    display: flex;
+}
+.b2 .down .d1
+{
+    width: 34%;
+    height: 20vh;
+    background-image: url(irm1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .d1 h1
+{
+    padding-top: 10px;
+}
+.b2 .down .d2
+{
+    width:33%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(c1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.b2 .down .d3
+{
+    width: 33%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(bk2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.b3
+{
+    width: 20%;
+    height: 40vh;
+    min-height: inherit;
+    background-image: url(nat1.avif);
+    background-position: center;
+    background-size: cover;
+}
+.b3 .overlay a{
+    display: flex;
+    color: aqua;
+}
+.b3 .overlay a:hover
+{
+     color: red;
+}
+.b3 .overlay a:active
+{
+    color: blue;
+}
+.b3 .overlay{
+    padding-left: 60%;
+    padding-top: 80%;
+}
+.wallpapers
+{
+    width: 100%;
+    min-height: auto;
+}
+.wallpapers .img
+{
+    display: flex;
+}
+@media(max-width:700)
+{
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: 60%;
+    }
+}
+@media(max-width:500px)
+{
+    .text
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1
+    {
+        font-size: 5vh;
+    }
+    .text .image {
+        height: 200px;
+        width: 100px;
+        margin-top: 20px;
+    }
+    .rtext
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p
+    {
+        margin: 10px;
+    }
+    .icons
+    {
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1
+    {
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2 .up{
+        min-height: 40vh;
+    }
+    .b2
+    {
+        width: 100%;
+    }
+    .b3
+    {
+        width: 100%;
+        min-height: 30vh;
+    }
+}
